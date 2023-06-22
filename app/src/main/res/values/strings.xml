@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Sales</string>
+    <string name="uhint">Enter your username</string>
+    <string name="phint">Enter your password</string>
+</resources>

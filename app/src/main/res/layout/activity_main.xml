@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/login_icon"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/glc" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/tv_username"
+        android:layout_marginTop="261dp"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/txt_username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="314dp"
+        android:textColor="@color/black"
+        android:text="Username"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/txt_username"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/tv_username"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_input"
+        android:hint="@string/uhint"
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/pw_layout"
+        android:layout_marginTop="401dp"
+        android:text="Password"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:id="@+id/pw_layout"
+        app:boxStrokeWidth="0dp"
+        app:passwordToggleTint="@color/toggle_password_selector"
+        app:boxStrokeWidthFocused="0dp"
+        app:hintEnabled="false"
+        app:passwordToggleDrawable="@drawable/toggle_password_selector"
+        android:layout_below="@id/tv_password"
+        app:passwordToggleEnabled="true"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:id="@+id/txt_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:paddingTop="12dp"
+            android:paddingStart="12dp"
+            android:inputType="textPassword"
+            android:paddingEnd="12dp"
+            android:hint="@string/phint"
+            android:background="@drawable/custom_input"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="350dp"
+        app:backgroundTint="@color/blue_simonsa"
+        android:background="@drawable/rounded_corner"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/pw_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:text="Login"
+        android:textSize="12sp"
+        android:textAllCaps="false" />
+</RelativeLayout>
