@@ -13,7 +13,7 @@
         android:layout_height="250dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        android:src="@drawable/glc" />
+        android:src="@drawable/salap" />
 
     <TextView
         android:id="@+id/tv1"
@@ -85,6 +85,12 @@
             android:background="@drawable/custom_input"
             />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"/>
 
     <Button
         android:id="@+id/btn_login"
